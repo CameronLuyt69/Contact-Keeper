@@ -100,7 +100,7 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: rgb(0, 0, 0) 1px solid;
+  border: rgb(0, 0, 0) 2px solid;
   border-radius: 10px;
   margin: 0.7rem 0;
   background-image: url(https://wallpaperplay.com/walls/full/e/3/9/141487.jpg);
@@ -233,7 +233,7 @@ img {
   margin: 0.3rem;
   background: var(--light-color);
   color: rgb(0, 0, 0);
-  border: black 1px solid;
+  border: black 2px solid;
   border-radius: 5px;
 }
 
@@ -295,11 +295,12 @@ img {
 }
 
 .btn:hover {
-  opacity: 0.8
+  border-color: white;
+  box-shadow: 0 0 11px rgba(33, 33, 33, .2);
 }
 
 .card:hover {
-  opacity: 0.8;
+  border-color: #003699;
 }
 
 .bg-light,
