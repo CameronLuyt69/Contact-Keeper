@@ -47,7 +47,7 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={onSubmit}>
-      <h2 className='text-primary'>
+      <h2 className='text-dark'>
         {current ? 'Edit Contact' : 'Add Contact'}
       </h2>
       <input
@@ -71,7 +71,7 @@ const ContactForm = () => {
         value={phone}
         onChange={onChange}
       />
-      <h5>Contact Type</h5>
+      <h4 className='text-dark'>Contact Type</h4>
       <input
         type='radio'
         name='type'

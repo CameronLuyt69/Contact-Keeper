@@ -14,14 +14,14 @@ const ContactItem = ({ contact }) => {
   };
 
   return (
-    <div className='card bg-light'>
-      <h3 className='text-primary text-left'>
+    <div className='card'>
+      <h3 className='text-dark text-left'>
         {name}{' '}
         <span
           style={{ float: 'right' }}
           className={
             'badge ' +
-            (type === 'professional' ? 'badge-success' : 'badge-primary')
+            (type === 'professional' ? 'badge-light' : 'badge-success')
           }
         >
           {type.charAt(0).toUpperCase() + type.slice(1)}

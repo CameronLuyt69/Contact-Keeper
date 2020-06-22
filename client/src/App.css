@@ -15,10 +15,13 @@
   padding: 0;
 }
 
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
+  background-image: url(https://i.pinimg.com/originals/29/96/7c/29967c0267d58120fbcb043020b09858.jpg);
+  background-size: 100%;
   background-color: #fff;
   color: #333;
 }
@@ -75,7 +78,11 @@ img {
 }
 
 .text-dark {
-  color: var(--dark-color);
+  color: rgb(0, 0, 0);
+}
+
+.text-light {
+  color: rgb(255, 255, 255);
 }
 
 .text-center {
@@ -93,8 +100,11 @@ img {
 /* Cards */
 .card {
   padding: 1rem;
-  border: #ccc 1px dotted;
+  border: rgb(0, 0, 0) 1px solid;
+  border-radius: 10px;
   margin: 0.7rem 0;
+  background-image: url(https://wallpaperplay.com/walls/full/e/3/9/141487.jpg);
+  color: rgb(0, 0, 0);
 }
 
 /* List */
@@ -186,14 +196,17 @@ img {
 .btn {
   display: inline-block;
   background: var(--light-color);
-  color: #333;
+  color: rgb(0, 0, 0);
   padding: 0.4rem 1.3rem;
-  font-size: 1rem;
-  border: none;
+  font-size: 2rem;
+  font-weight: bold;
   cursor: pointer;
   margin-right: 0.5rem;
   transition: opacity 0.2s ease-in;
   outline: none;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: black 2px solid;
 }
 
 .btn-link {
@@ -219,7 +232,8 @@ img {
   text-align: center;
   margin: 0.3rem;
   background: var(--light-color);
-  color: #333;
+  color: rgb(0, 0, 0);
+  border: black 1px solid;
   border-radius: 5px;
 }
 
@@ -236,22 +250,22 @@ img {
 .badge-primary,
 .alert-primary {
   background: var(--primary-color);
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .btn-light,
 .bg-light,
 .badge-light,
 .alert-light {
-  background: var(--light-color);
-  color: #333;
+  background: white;
+  color: rgb(0, 0, 0);
 }
 
 .btn-dark,
 .bg-dark,
 .badge-dark,
 .alert-dark {
-  background: var(--dark-color);
+  background: black;
   color: #fff;
 }
 
@@ -260,7 +274,7 @@ img {
 .badge-danger,
 .alert-danger {
   background: var(--danger-color);
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .btn-success,
@@ -268,7 +282,7 @@ img {
 .badge-success,
 .alert-success {
   background: var(--success-color);
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 
 .btn-white,
@@ -281,6 +295,10 @@ img {
 }
 
 .btn:hover {
+  opacity: 0.8
+}
+
+.card:hover {
   opacity: 0.8;
 }
 
@@ -364,6 +382,7 @@ table th {
   border-bottom: solid 1px var(--primary-color);
   opacity: 0.9;
   margin-bottom: 1rem;
+  color: black;
 }
 
 .navbar ul {

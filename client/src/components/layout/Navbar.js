@@ -46,7 +46,7 @@ const Navbar = ({ title, icon }) => {
 
   return (
     <div className='navbar bg-primary'>
-      <h1>
+      <h1 className='bg-primary'>
         <Link to='/'>
           <i className={icon} /> {title}
         </Link>
@@ -63,7 +63,7 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
   title: 'Contact Keeper',
-  icon: 'fas fa-id-card-alt'
+  icon: 'fab fa-readme'
 };
 
 export default Navbar;
